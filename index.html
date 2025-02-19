@@ -73,7 +73,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/buildV2.loader.js"></script>
+    <script src="Build/BuildV3.loader.js"></script>
     <script>
             var initialize = async() =>{
 
@@ -110,9 +110,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/buildV2.data.unityweb",
-                    frameworkUrl: "Build/buildV2.framework.js.unityweb",
-                    codeUrl: "Build/buildV2.wasm.unityweb",
+                    dataUrl: "Build/BuildV3.data.unityweb",
+                    frameworkUrl: "Build/BuildV3.framework.js.unityweb",
+                    codeUrl: "Build/BuildV3.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WebARTracker",
