@@ -41,6 +41,9 @@
 		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='QrPanel 1' src='targets/QrPanel 1.png'></imagetarget>
+		<imagetarget id='QrPanel2' src='targets/QrPanel2.png'></imagetarget>
+		<imagetarget id='Panel1V2' src='targets/Imagen2.png'></imagetarget>
+		<imagetarget id='Panel1V2' src='targets/Imagen2.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -79,7 +82,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/BuildPanel1V3.loader.js"></script>
+    <script src="Build/BuildV1.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -111,9 +114,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BuildPanel1V3.data.unityweb",
-                    frameworkUrl: "Build/BuildPanel1V3.framework.js.unityweb",
-                    codeUrl: "Build/BuildPanel1V3.wasm.unityweb",
+                    dataUrl: "Build/BuildV1.data.unityweb",
+                    frameworkUrl: "Build/BuildV1.framework.js.unityweb",
+                    codeUrl: "Build/BuildV1.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WebARTracker",
